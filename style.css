@@ -2,30 +2,31 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-}
-
-h1 {
+    background-color: gray;
+  }
+  
+  h1 {
     background-color: #4CAF50;
     color: white;
     padding: 20px;
     margin: 0;
-}
-
-form {
+  }
+  
+  form {
     margin: 20px;
-}
-
-label {
+  }
+  
+  label {
     display: inline-block;
     width: 150px;
     text-align: right;
-}
-
-select, input[type=number] {
+  }
+  
+  select, input[type=number] {
     width: 200px;
-}
-
-button {
+  }
+  
+  button {
     margin-left: 150px;
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -33,17 +34,17 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     background-color: #3e8e41;
-}
-
-#result {
+  }
+  
+  #result {
     margin: 20px;
-}
-
-footer {
+  }
+  
+  footer {
     position: fixed;
     bottom: 0;
     left: 0;

@@ -1,50 +1,53 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Seleção de Candidato</title>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    
+  <title>Seleção de Candidato</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 </head>
 <body>
+  <div class="container mt-5">
     <h1>Seleção de Candidato</h1>
-    <form id="form" onsubmit="return false;">
+    <form id="form">
+      <div class="form-group">
         <label for="married">Casado:</label>
-        <select id="married" name="married">
-            <option value="1">Sim</option>
-            <option value="0">Não</option>
+        <select id="married" name="married" class="form-control">
+          <option value="1">Sim</option>
+          <option value="0">Não</option>
         </select>
-        <br>
-
+      </div>
+      <div class="form-group">
         <label for="age">Idade:</label>
-        <input type="number" id="age" name="age" min="35" max="50">
-        <br>
-
+        <input type="number" id="age" name="age" min="18" max="40" class="form-control">
+      </div>
+      <div class="form-group">
         <label for="education">Curso Superior:</label>
-        <select id="education" name="education">
-            <option value="1">Sim</option>
-            <option value="0">Não</option>
+        <select id="education" name="education" class="form-control">
+          <option value="1">Sim</option>
+          <option value="2">Cursando</option>
+          <option value="0">Não</option>
         </select>
-        <br>
-
+      </div>
+      <div class="form-group">
         <label for="experience">Experiência:</label>
-        <input type="number" id="experience" name="experience" min="5">
-        <br>
-
+        <input type="number" id="experience" name="experience" min="5" class="form-control">
+      </div>
+      <div class="form-group">
         <label for="salary">Faixa Salarial:</label>
-        <input type="number" id="salary" name="salary" min="2500" max="3000">
-        <br>
-
-        <button id="result">Selecionar Candidato</button>
+        <input type="number" id="salary" name="salary" min="2500" max="3000" class="form-control">
+      </div>
+      <button id="result" type="button">Selecionar Candidato</button>
     </form>
-
     <p id="resultMessage"></p>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
 
-    <footer>
-  PROJETO CRIADO POR: MATHEUS HENRIQUE
-</footer>
-
+  <footer class="bg-light text-center py-3">
+    PROJETO CRIADO POR: MATHEUS HENRIQUE
+  </footer>
 </body>
 </html>
